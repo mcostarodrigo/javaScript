@@ -14,21 +14,21 @@ let person = [{
     age: 31,
     sex: "feminine",
     profession: "physiotherapist",
-    nationality: "Brasileiro"
+    nationality: "Brasileira"
 },
 {
     name: "Fernanda",
     age: 31,
     sex: "feminine",
     profession: "saleswoman",
-    nationality: "Brasileiro"
+    nationality: "Brasileira"
 },
 {
     name: "Luana",
     age: 28,
     sex: "feminine",
     profession: "Support",
-    nationality: "Brasileiro"
+    nationality: "Brasileira"
 },
 {
     name: "Fred",
@@ -39,7 +39,7 @@ let person = [{
 }]
 
 for (let i = 0; i < person.length; i++) {
-    if (person[i].nationality === "Brasileiro" && person[i].age > 18)
+    if (person[i].nationality === "Brasileiro" || person[i].nationality === "Brasileira" && person[i].age > 18)
     console.log(`${person[i].name} está aprovado!`)
 
     else { console.log(`${person[i].name} NÃO está aprovado!`)}}

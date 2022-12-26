@@ -8,3 +8,6 @@ function hora() {
 }
 
 hora()
+
+// correção Rodolfo "console.log(new Date().toLocaleTimeString('pt-BR'))" que vai mostra a hora local Brasil. 
+// Outra parte do dessafio usado o get "console.log(new Date().getMinutes" que nesse caso específico retona os minutos.

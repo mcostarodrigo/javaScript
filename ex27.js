@@ -3,39 +3,56 @@
  - média do número de filhos; - maior salário; - O final da leitura de dados se dará com a 
  entrada de um salário negativo. - Faça isso usando uma função!*/
 
- let person = [{
-    name: "Rodrigo",
-    age: 34,
-    sex: "masculine",
-    profession: "programmer",
-    wage: 20.000,
-    sons: 0
+let people = [{
+    numberofChildrens: 0,
+    salary: 20.000
 },
 {
-    name: "Joaquina",
-    age: 31,
-    sex: "feminine",
-    profession: "physiotherapist",
-    wage: 8.000,
-    sons: 5
+    numberofChildrens: 2,
+    salary: 10.000
 },
 {
-    name: "Marilda",
-    age: 31,
-    sex: "feminine",
-    profession: "saleswoman",
-    wage: 1.500,
-    sons: 4
+    numberofChildrens: 2,
+    salary: 5.000
 },
+{ 
+     numberofChildrens: 1,
+    salary: 6.000
+},
+{ 
+    numberofChildrens: 1,
+   salary: 2.000
+},
+{ 
+    numberofChildrens: 3,
+   salary: -2.000
+}
 ]
 
-let total = 0
-let valor = []
+function findAverageAndHighestSalary(peopleInformation) {
 
-for(let i = 0; i < person.wage; i++){
-    total += person.wage[i];
-    valor.push ((person.wage[i] += person.wage[i]))
+let averageSalary = 0
+let averageChildren = 0 
+let highestSalary = 0
+
+for(let i = 0; i <= peopleInformation.length; i++ ){
+
+    const salary = peopleInformation [i].salary
+    const children = peopleInformation [i].numberofChildrens
+
+    if (salary > highestSalary) highestSalary = salary
+
+    if (salary < 0) {
+        console.log(`Média de salário R$${(averageSalary / i).toFixed(0)}`) /*toFixed(0) não mostra casa decimal*/
+        console.log(`Média de filhos R$${(averageChildren / i).toFixed(0)}`)
+        console.log(`Maior salário R$${highestSalary}`)
+        break
+
+    } else {
+        averageSalary = averageSalary + salary;
+        averageChildren += children
+    }
 
 }
 
-console.log (valor)
+}

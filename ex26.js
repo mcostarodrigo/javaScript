@@ -10,6 +10,17 @@ function comparing (number1, number2) {
     } 
 }
 
-comparing(90, 91)
+comparing(91, 91)
 
 console.log (`O maior número digitado é ${maior}`)
+
+/*Esse desafio foi respondido da seguinte forma:
+
+const number = (numberOne, numberTwo) => {
+    if(numberOne > numberTwo)console.log("O primeiro é maior")
+    else console.log ("O segundo é maior")
+}
+
+number (x,x)
+
+*/

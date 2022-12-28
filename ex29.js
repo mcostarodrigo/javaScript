@@ -15,6 +15,10 @@ Se NÃO é a primeira compra do cliente, NÃO pagar a vista e a compra for menor
 Se o cliente recebeu desconto, imprima na tela um agradecimento pela compra, o valor total sem desconto, o valor total com desconto e a porcentagem de desconto que ele recebeu.
 Se o cliente não recebeu desconto, imprima na tela um agradecimento pela compra, o valor total da sua compra e um cupom de desconto. Esse cupom deve ser um valor aleatório entre 10 e 20% para a próxima compra.*/
 
+
+/*EXERCÍCIO NÃO FINALIZADO*/
+/*EXERCÍCIO NÃO FINALIZADO*/
+
 function desconto(nome, valorTotaldaCompra, primeiracompra, pagamentoaVista) {
 
     /* 04. Se é a primeira compra do cliente, pagar a vista, e a compra for maior que R$ 1000 => 30% de desconto*/

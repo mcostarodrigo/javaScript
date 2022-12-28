@@ -2,8 +2,8 @@
 Porém, os dois nomes devem estar em um Array. 
 Ex: const array = ["João", "Maria"]. João e João, imprime true. João e Maria, imprime false*/
 
-const person = ["Karla", "Karla"]
+const person = ["Karla", "Rodrigo"]
 
-let result = (person[0] == person[1])
+let result = (person[1] === person[0])
 
 console.log(result)

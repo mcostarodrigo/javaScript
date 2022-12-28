@@ -1,4 +1,4 @@
-/* Filtar empresas fundadas depois de 1975, e com mais de 2 milhoes em valor de mercado. */
+/* Filtar empresas fundadas depois de 1975, e com mais de 200 em valor de mercado. */
 
 const companies = [
     { name: 'Samsung', marketValue: 50, CEO: 'Kin Hyun Suk', foundedOn: 1938 },
@@ -11,7 +11,7 @@ const companies = [
 ];
 
 const newListCompanies = companies.filter(founde => {
-    return founde.foundedOn >= 1975
+    if (founde.foundedOn > 1975 && founde.marketValue > 200) return true
 })
 
 console.log(newListCompanies)

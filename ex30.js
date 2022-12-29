@@ -1,4 +1,5 @@
-/*Exercício referente map. aula 09. módulo 2 javaScript*/
+/*Exercício referente map. aula 09. módulo 2 javaScript
+Clientes que são vips, ficam no setor "Black", os que não são ficam no setor "Green".*/
 
 const lista = [
     { nome: "Rodrigo", vip: true },

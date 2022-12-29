@@ -1,4 +1,5 @@
-/*Exercício 2 referente map. aula 09. módulo 2 javaScript*/
+/*Exercício 2 referente map. aula 09. módulo 2 javaScript. 
+Alunos que tiraram nota maior que 7 são aprovados, e os que tiraram menos são reprovados.*/
 
 const estudantes = [
     { nome: "Rodrigo", notaDeTeste: 7 },
